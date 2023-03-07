@@ -9,7 +9,7 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
     vector<int> answer(id_list.size(), 0);
     
     // 한 유저가 같은 유저를 여러 번 신고한 경우는 신고 횟수 1회 처리
-    // -> report에서 같은 값 제거
+    // -> report에서 같은 값 제거 
     sort(report.begin(), report.end());
     report.erase(unique(report.begin(), report.end()), report.end());
     
